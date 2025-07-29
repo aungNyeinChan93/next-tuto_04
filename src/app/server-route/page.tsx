@@ -1,9 +1,16 @@
 import React from "react";
 import { serverProcess } from "@/utils/serverUtils";
+// import { clientOnlyCode } from "@/utils/client-utils";
 
-const ServerRoute = () => {
+const ServerRoute = async () => {
   const result = serverProcess();
-  return <main>Server Route! {result}</main>;
+  // const cli_res = (await clientOnlyCode()) as string;
+  return (
+    <main>
+      Server Route! {result}
+      {/* <p>{cli_res}</p> */}
+    </main>
+  );
 };
 
 export default ServerRoute;
