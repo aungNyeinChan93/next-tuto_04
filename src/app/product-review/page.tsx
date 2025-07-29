@@ -7,6 +7,7 @@ const ProductReview = async () => {
       <main>
         <Suspense fallback={"Product loading . . ."}>
           <TestProduct />
+          <TestProduct />
         </Suspense>
       </main>
     </React.Fragment>
